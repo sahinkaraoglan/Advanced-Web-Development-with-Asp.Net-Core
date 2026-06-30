@@ -5,12 +5,36 @@
       "PackagePath": "staticwebassets\\basics.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\aspnetcore-dersleri\\basics\\wwwroot\\css\\contact.css",
+      "PackagePath": "staticwebassets\\css\\contact.css"
+    },
+    {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\aspnetcore-dersleri\\basics\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\aspnetcore-dersleri\\basics\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\aspnetcore-dersleri\\basics\\wwwroot\\img\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\aspnetcore-dersleri\\basics\\wwwroot\\img\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\aspnetcore-dersleri\\basics\\wwwroot\\img\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\aspnetcore-dersleri\\basics\\wwwroot\\img\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\aspnetcore-dersleri\\basics\\wwwroot\\img\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\5.jpg"
     },
     {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\aspnetcore-dersleri\\basics\\wwwroot\\js\\site.js",
