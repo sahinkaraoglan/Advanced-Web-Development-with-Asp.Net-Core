@@ -25,3 +25,5 @@ C:\Users\Hp\OneDrive\Desktop\MeetingApp\obj\Debug\net8.0\MeetingApp.genruntimeco
 C:\Users\Hp\OneDrive\Desktop\MeetingApp\obj\Debug\net8.0\ref\MeetingApp.dll
 C:\Users\Hp\OneDrive\Desktop\MeetingApp\obj\Debug\net8.0\MeetingApp.RazorAssemblyInfo.cache
 C:\Users\Hp\OneDrive\Desktop\MeetingApp\obj\Debug\net8.0\MeetingApp.RazorAssemblyInfo.cs
+C:\Users\Hp\OneDrive\Desktop\MeetingApp\bin\Debug\net8.0\libman.json
+C:\Users\Hp\OneDrive\Desktop\MeetingApp\bin\Debug\net8.0\MeetingApp.staticwebassets.runtime.json

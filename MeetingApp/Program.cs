@@ -5,7 +5,12 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-//controller/action/id?
+//wwwroot gibi static dosyaları dışarı açıyoruz.
+app.UseStaticFiles();
+
+
+app.UseRouting();
+
 //app.MapDefaultControllerRoute();
 app.MapControllerRoute(
     name:"default",
