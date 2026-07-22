@@ -1,0 +1,7 @@
+.asp-validation-summary {
+    color: #dc3545;
+}
+
+.input-validation-error {
+    border: 1px solid #dc3545;
+}
