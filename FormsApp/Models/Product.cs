@@ -1,13 +1,19 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace FormsApp.Models
 {
+
+    //[Bind("Name", "Price")] bind etmenin farklı bir yöntemi.
     public class Product
     {
         [Display(Name ="Urun Id")]
+        //[BindNever] //bind etmeyi engelliyoruz.
         public int ProductId { get; set; }
 
         [Display(Name ="Urun Adı")]
+        [Required]
         public string Name { get; set; } = string.Empty;
 
         [Display(Name ="Fiyat")]
@@ -16,6 +22,8 @@ namespace FormsApp.Models
         [Display(Name ="Resim")]
         public string Image { get; set; } = string.Empty;
         public bool IsActive { get; set; }
+
+        [Display(Name ="Category")]
         public int CategoryId { get; set; }
     }
 }
