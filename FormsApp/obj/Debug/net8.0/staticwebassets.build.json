@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iZ34Nh4VrmlzhcwmsEmlQZ82/7jd1fRzFE3cMVhKzV4=",
+  "Hash": "gEzI4QbUJdmCdJCjKHRxE9+oXO4oFw79AffI6eQblHo=",
   "Source": "FormsApp",
   "BasePath": "_content/FormsApp",
   "Mode": "Default",
@@ -281,6 +281,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\689b40b9-ba20-438a-b2ed-f614a55353fe.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Hp\\OneDrive\\Desktop\\FormsApp\\wwwroot\\img\\98bc6b0d-4d0f-48f9-85f2-956094a06a07.jpg",
+      "SourceId": "FormsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\OneDrive\\Desktop\\FormsApp\\wwwroot\\",
+      "BasePath": "_content/FormsApp",
+      "RelativePath": "img/98bc6b0d-4d0f-48f9-85f2-956094a06a07.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\98bc6b0d-4d0f-48f9-85f2-956094a06a07.jpg"
     },
     {
       "Identity": "C:\\Users\\Hp\\OneDrive\\Desktop\\FormsApp\\wwwroot\\img\\ba9f7c7e-06bf-4294-ac78-6a94944e6459.jpg",
