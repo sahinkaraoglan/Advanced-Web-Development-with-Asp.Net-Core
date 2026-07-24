@@ -13,17 +13,21 @@ namespace FormsApp.Models
         public int ProductId { get; set; }
 
         [Display(Name ="Urun Adı")]
+        [StringLength(100)]
         [Required]
-        public string Name { get; set; } = string.Empty;
+        public string Name { get; set; } = null!;
 
+        [Required(ErrorMessage = "Gerekli bir alan")]
+        [Range(0, 100000)]
         [Display(Name ="Fiyat")]
-        public decimal Price { get; set; }
+        public decimal? Price { get; set; }
 
         [Display(Name ="Resim")]
-        public string Image { get; set; } = string.Empty;
+        public string? Image { get; set; } = string.Empty;
         public bool IsActive { get; set; }
 
         [Display(Name ="Category")]
-        public int CategoryId { get; set; }
+        [Required]
+        public int? CategoryId { get; set; }
     }
 }

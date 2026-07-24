@@ -47,9 +47,15 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult Create(Product model)
+    public IActionResult Create(Product model, IFormFile imageFile)
     {
-        Repository.CreateProduct(model);
-        return RedirectToAction("Index");
+        if(ModelState.IsValid)
+        {
+            model.ProductId = Repository.Products.Count + 1;
+            Repository.CreateProduct(model);
+            return RedirectToAction("Index");
+        }
+        ViewBag.Categories =  new SelectList(Repository.Categories, "CategoryId", "Name");
+        return View(model);
     }
 }
