@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2lip56m3SusXM0c0qBC0OHsW5MPpGllKCmK6qEy4+gmcqYTSku/f7An1bFX7+FjhM030cMlwyR8Oe5qLx9BlWA==",
+  "dgSpecHash": "ZNklLjahk3HmO+xSbxPK/DNkbJckwEVzHbonc1TSuRgX0bdutrlMus25AXdadQ7kYCp0e8pxmVh6/A55fKLS3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hp\\Desktop\\efcoreApp\\efcoreApp.csproj",
+  "projectFilePath": "C:\\Users\\Hp\\OneDrive\\Desktop\\efcoreApp\\efcoreApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hp\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.29\\microsoft.data.sqlite.core.8.0.29.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.29\\microsoft.entityframeworkcore.8.0.29.nupkg.sha512",

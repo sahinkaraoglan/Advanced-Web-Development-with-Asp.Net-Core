@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Desktop\\efcoreApp\\efcoreApp.csproj": {}
+    "C:\\Users\\Hp\\OneDrive\\Desktop\\efcoreApp\\efcoreApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Desktop\\efcoreApp\\efcoreApp.csproj": {
+    "C:\\Users\\Hp\\OneDrive\\Desktop\\efcoreApp\\efcoreApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\efcoreApp\\efcoreApp.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\OneDrive\\Desktop\\efcoreApp\\efcoreApp.csproj",
         "projectName": "efcoreApp",
-        "projectPath": "C:\\Users\\Hp\\Desktop\\efcoreApp\\efcoreApp.csproj",
+        "projectPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\efcoreApp\\efcoreApp.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Desktop\\efcoreApp\\obj\\",
+        "outputPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\efcoreApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
