@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace efcoreApp.Data
 {
-    public class DaTaContext : DbContext
+    public class DataContext : DbContext
     {
         public DbSet<Kurs> Kurslar => Set<Kurs>();
         public DbSet<Ogrenci> Ogrenciler => Set<Ogrenci>();
