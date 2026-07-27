@@ -34,6 +34,10 @@ namespace efcoreApp.Controllers
             return RedirectToAction("Index");
         }
 
+
+        //Edit formunun çağrıldığı yer.
+
+        [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
             if(id == null)
@@ -48,6 +52,39 @@ namespace efcoreApp.Controllers
                 return NotFound();
             }
             return View(ogr);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken] //formu get metodu ile yükleyen kişi ile post metdu ile post eden kişinin aynı kişi olup olmadığını kontrol eder. 
+        public async Task<IActionResult> Edit(int id, Ogrenci model)
+        {
+            if(id != model.OgrenciId)
+            {
+                return NotFound();
+            }
+
+            if(ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(model);
+                    await _context.SaveChangesAsync();
+                }
+                catch(DbUpdateConcurrencyException)
+                {
+                    //any burda herhangi anlamında kullanılır. böyle bir kayıt veritabanında varmı gibi.
+                    if(!_context.Ogrenciler.Any(o => o.OgrenciId == model.OgrenciId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Index");
+            }
+            return View(model);
         }
     }
 }
