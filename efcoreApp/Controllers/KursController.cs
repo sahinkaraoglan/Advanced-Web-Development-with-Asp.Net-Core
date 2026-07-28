@@ -25,11 +25,62 @@ namespace efcoreApp.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Kurs model)
         {
             _context.Kurslar.Add(model);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if(id == null)
+            {
+                return NotFound(); 
+            }
+            //findasync sadece is araması
+            var kurs = await _context.Kurslar.FindAsync(id);
+            //var kurs = await _context.Kurslar.FirstOrDefaultAsync(o => o.KursId == id);
+            if(kurs == null)
+            {
+                return NotFound();
+            }
+            return View(kurs);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken] //formu get metodu ile yükleyen kişi ile post metdu ile post eden kişinin aynı kişi olup olmadığını kontrol eder. 
+        public async Task<IActionResult> Edit(int id, Kurs model)
+        {
+            if(id != model.KursId)
+            {
+                return NotFound();
+            }
+
+            if(ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(model);
+                    await _context.SaveChangesAsync();
+                }
+                catch(DbUpdateException)
+                {
+                    //any burda herhangi anlamında kullanılır. böyle bir kayıt veritabanında varmı gibi.
+                    if(!_context.Kurslar.Any(o => o.KursId == model.KursId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Index");
+            }
+            return View(model);
         }
     }
 }
