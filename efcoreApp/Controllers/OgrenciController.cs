@@ -33,9 +33,7 @@ namespace efcoreApp.Controllers
             return RedirectToAction("Index");
         }
 
-
         //Edit formunun çağrıldığı yer.
-
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
