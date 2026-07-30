@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\BlogApp\\BlogApp.csproj": {}
+    "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\BlogApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\BlogApp\\BlogApp.csproj": {
+    "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\BlogApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\BlogApp\\BlogApp.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\BlogApp.csproj",
         "projectName": "BlogApp",
-        "projectPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\BlogApp\\BlogApp.csproj",
+        "projectPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\BlogApp.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\BlogApp\\obj\\",
+        "outputPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
