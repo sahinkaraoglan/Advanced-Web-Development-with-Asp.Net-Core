@@ -3,19 +3,19 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllersWithViews();
+
 builder.Services.AddDbContext<BlogContext>(options =>
 {
-    var config = builder.Configuration;
-    var connectionString = config.GetConnectionString("mysql_connection");
-    //options.UseSqlite(connectionString);
-    var version = new MySqlServerVersion(new Version(8,0,44));
-    options.UseMySql(connectionString, version);
+    options.UseSqlite(builder.Configuration["ConnectionStrings:sql_connection"]);
+    //var version = new MySqlServerVersion(new Version(8,0,44));
+    //options.UseMySql(connectionString, version);
 });
 
 var app = builder.Build();
 
 SeedData.TestVerileriniDoldur(app);
 
-app.MapGet("/", () => "Hello World!");
+app.MapDefaultControllerRoute();
 
 app.Run();

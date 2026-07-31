@@ -126,5 +126,5 @@ C:\Users\Hp\OneDrive\Desktop\BlogApp\obj\Debug\net8.0\refint\BlogApp.dll
 C:\Users\Hp\OneDrive\Desktop\BlogApp\obj\Debug\net8.0\BlogApp.pdb
 C:\Users\Hp\OneDrive\Desktop\BlogApp\obj\Debug\net8.0\BlogApp.genruntimeconfig.cache
 C:\Users\Hp\OneDrive\Desktop\BlogApp\obj\Debug\net8.0\ref\BlogApp.dll
-C:\Users\Hp\OneDrive\Desktop\BlogApp\bin\Debug\net8.0\MySqlConnector.dll
-C:\Users\Hp\OneDrive\Desktop\BlogApp\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Hp\OneDrive\Desktop\BlogApp\obj\Debug\net8.0\BlogApp.RazorAssemblyInfo.cache
+C:\Users\Hp\OneDrive\Desktop\BlogApp\obj\Debug\net8.0\BlogApp.RazorAssemblyInfo.cs
