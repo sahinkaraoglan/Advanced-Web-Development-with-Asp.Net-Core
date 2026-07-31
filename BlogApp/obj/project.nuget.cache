@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SvSeP06kc1X89oC0Kxif2W8VUwsoonQ/WKI1w4pnZRD3ST7KmmfqcvF0XMLT1OuILbHzJ9NEaGaUYNUjIuSPzg==",
+  "dgSpecHash": "FDXAjkc40QHPBYjPp/dEwGxD+yzcdZGiyqlMU1SpkYT5e4Qz6o9+7r1qzXhiinxpUDnWp/9gVdyEEqoRHFgfVQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\BlogApp.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,8 @@
     "C:\\Users\\Hp\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\mysqlconnector\\2.3.5\\mysqlconnector.2.3.5.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.2\\pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
