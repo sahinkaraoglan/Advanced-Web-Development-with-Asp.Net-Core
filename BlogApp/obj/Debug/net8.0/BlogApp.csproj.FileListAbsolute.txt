@@ -128,3 +128,5 @@ C:\Users\Hp\OneDrive\Desktop\BlogApp\obj\Debug\net8.0\BlogApp.genruntimeconfig.c
 C:\Users\Hp\OneDrive\Desktop\BlogApp\obj\Debug\net8.0\ref\BlogApp.dll
 C:\Users\Hp\OneDrive\Desktop\BlogApp\obj\Debug\net8.0\BlogApp.RazorAssemblyInfo.cache
 C:\Users\Hp\OneDrive\Desktop\BlogApp\obj\Debug\net8.0\BlogApp.RazorAssemblyInfo.cs
+C:\Users\Hp\OneDrive\Desktop\BlogApp\bin\Debug\net8.0\libman.json
+C:\Users\Hp\OneDrive\Desktop\BlogApp\bin\Debug\net8.0\BlogApp.staticwebassets.runtime.json
