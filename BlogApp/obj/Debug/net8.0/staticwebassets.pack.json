@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\wwwroot\\img\\1.jpg",
       "PackagePath": "staticwebassets\\img\\1.jpg"
     },

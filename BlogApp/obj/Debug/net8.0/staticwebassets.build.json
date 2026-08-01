@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LN9D80jXP1eR/iFS5yD/GwgdbEcKgMhHt24R0kTG758=",
+  "Hash": "VM/vkkiMMwlMJXtEqNk6edH13fvFl9B80dQSk8S3mKQ=",
   "Source": "BlogApp",
   "BasePath": "_content/BlogApp",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\wwwroot\\css\\style.css",
+      "SourceId": "BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\wwwroot\\",
+      "BasePath": "_content/BlogApp",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
     {
       "Identity": "C:\\Users\\Hp\\OneDrive\\Desktop\\BlogApp\\wwwroot\\img\\1.jpg",
       "SourceId": "BlogApp",
