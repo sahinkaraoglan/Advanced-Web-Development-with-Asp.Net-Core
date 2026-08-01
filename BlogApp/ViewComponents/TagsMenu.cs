@@ -12,7 +12,7 @@ namespace BlogApp.ViewComponents
             _tagRepository = tagRepository;
         }
 
-        public async Task<IViewComponentResult> Invoke()
+        public async Task<IViewComponentResult> InvokeAsync()
         {
             return View(await _tagRepository.Tags.ToListAsync());
         }
