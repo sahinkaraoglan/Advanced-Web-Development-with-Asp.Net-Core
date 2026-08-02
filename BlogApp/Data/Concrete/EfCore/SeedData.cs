@@ -19,11 +19,11 @@ namespace BlogApp.Data.Concrete.EfCore
                 if(!context.Tags.Any())
                 {
                     context.Tags.AddRange(
-                        new Tag {Text="Web Programlama"},
-                        new Tag {Text="Backend"},
-                        new Tag {Text="Frontend"},
-                        new Tag {Text="Full Stack"},
-                        new Tag {Text="PHP"}
+                        new Tag {Text="Web Programlama", Url = "web-programlama"},
+                        new Tag {Text="Backend", Url = "backend"},
+                        new Tag {Text="Frontend", Url = "frontend"},
+                        new Tag {Text="Full Stack", Url = "fullstack"},
+                        new Tag {Text="PHP", Url = "php"}
                     );
                     context.SaveChanges();
                 }
@@ -44,6 +44,7 @@ namespace BlogApp.Data.Concrete.EfCore
                         {
                             Title ="Asp.net core",
                             Content = "Asp.net core dersleri",
+                            Url = "aspnet-core",
                             IsActive = true,
                             PublishedOn = DateTime.Now.AddDays(-10),
                             Tags = context.Tags.Take(3).ToList(),
@@ -54,6 +55,7 @@ namespace BlogApp.Data.Concrete.EfCore
                         {
                             Title ="Php",
                             Content = "Php dersleri",
+                            Url = "php",
                             IsActive = true,
                             PublishedOn = DateTime.Now.AddDays(-20),
                             Tags = context.Tags.Take(2).ToList(),
@@ -64,10 +66,44 @@ namespace BlogApp.Data.Concrete.EfCore
                         {
                             Title ="Django",
                             Content = "Django dersleri",
+                            Url = "django",
                             IsActive = true,
-                            PublishedOn = DateTime.Now.AddDays(-5),
+                            PublishedOn = DateTime.Now.AddDays(-30),
                             Tags = context.Tags.Take(4).ToList(),
                             Image = "3.jpg",
+                            UserId = 2
+                        },
+                        new Post
+                        {
+                            Title ="React",
+                            Content = "React dersleri",
+                            Url = "reacdersleri",
+                            IsActive = true,
+                            PublishedOn = DateTime.Now.AddDays(-40),
+                            Tags = context.Tags.Take(4).ToList(),
+                            Image = "3.jpg",
+                            UserId = 2
+                        },
+                        new Post
+                        {
+                            Title ="Anguler",
+                            Content = "Anguler dersleri",
+                            Url = "anguler",
+                            IsActive = true,
+                            PublishedOn = DateTime.Now.AddDays(-50),
+                            Tags = context.Tags.Take(4).ToList(),
+                            Image = "1.jpg",
+                            UserId = 2
+                        },
+                        new Post
+                        {
+                            Title ="Web Tasarım",
+                            Content = "Web tasarım dersleri",
+                            Url = "web-tasarim",
+                            IsActive = true,
+                            PublishedOn = DateTime.Now.AddDays(-60),
+                            Tags = context.Tags.Take(4).ToList(),
+                            Image = "2.jpg",
                             UserId = 2
                         }
                     );
