@@ -31,8 +31,8 @@ namespace BlogApp.Data.Concrete.EfCore
                 if(!context.Users.Any())
                 {
                     context.Users.AddRange(
-                        new Entity.User {UserName = "sahinkaraoglan"},
-                        new User {UserName = "sedaugur"}
+                        new Entity.User {UserName = "sahinkaraoglan", Image= "p1.jpg"},
+                        new User {UserName = "aliyilmaz", Image= "p2.jpg"}
                     );
                     context.SaveChanges();
                 }
@@ -49,7 +49,20 @@ namespace BlogApp.Data.Concrete.EfCore
                             PublishedOn = DateTime.Now.AddDays(-10),
                             Tags = context.Tags.Take(3).ToList(),
                             Image = "1.jpg",
-                            UserId = 1
+                            UserId = 1,
+                            Comments = new List<Comment>
+                            {
+                                new Comment { 
+                                    Text = "güzel bir kurs",
+                                    PublishedOn = new DateTime(),
+                                    UserId = 1
+                                },
+                                new Comment { 
+                                    Text = "iyi bir kurs",
+                                    PublishedOn = new DateTime(),
+                                    UserId = 2
+                                },
+                            }
                         },
                         new Post
                         {
