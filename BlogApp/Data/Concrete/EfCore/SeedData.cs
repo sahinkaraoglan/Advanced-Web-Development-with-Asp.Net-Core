@@ -54,12 +54,12 @@ namespace BlogApp.Data.Concrete.EfCore
                             {
                                 new Comment { 
                                     Text = "güzel bir kurs",
-                                    PublishedOn = new DateTime(),
+                                    PublishedOn = DateTime.Now.AddDays(-20),
                                     UserId = 1
                                 },
                                 new Comment { 
                                     Text = "iyi bir kurs",
-                                    PublishedOn = new DateTime(),
+                                    PublishedOn = DateTime.Now.AddDays(-10),
                                     UserId = 2
                                 },
                             }
