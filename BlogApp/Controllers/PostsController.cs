@@ -37,7 +37,8 @@ namespace BlogApp.Controllers
                         .FirstOrDefaultAsync(p=> p.Url == url));
         }
 
-        public IActionResult AddComment(int PostId, string UserName, string Text, string Url)
+        [HttpPost]
+        public JsonResult AddComment(int PostId, string UserName, string Text)
         {
             var entity = new Comment
             {
@@ -50,7 +51,15 @@ namespace BlogApp.Controllers
 
             //return Redirect("/posts/details/" + Url);
             //"post_details" burası program cs içerisndeki name alanı.
-            return RedirectToRoute("post_details", new {url = Url});
+            //return RedirectToRoute("post_details", new {url = Url});
+
+            return Json( new
+            {
+                UserName,
+                Text,
+                entity.PublishedOn,
+                entity.User.Image
+            });
         }
     }
 }
