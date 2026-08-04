@@ -31,8 +31,8 @@ namespace BlogApp.Data.Concrete.EfCore
                 if(!context.Users.Any())
                 {
                     context.Users.AddRange(
-                        new Entity.User {UserName = "sahinkaraoglan", Image= "p1.jpg"},
-                        new User {UserName = "aliyilmaz", Image= "p2.jpg"}
+                        new Entity.User {UserName = "sahinkaraoglan", Name="Şahin Karaoğlan", Email="info@sahinkaraoglan.com", Password="123456", Image= "p1.jpg"},
+                        new User {UserName = "aliyilmaz", Name="Ali Yılmaz", Email="info@aliyilmaz.com", Password="123456", Image= "p2.jpg"}
                     );
                     context.SaveChanges();
                 }
