@@ -1,10 +1,8 @@
-using System.Runtime.CompilerServices;
 using IdentityApp.Models;
 using IdentityApp.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace IdentityApp.Controllers
 {
@@ -12,17 +10,16 @@ namespace IdentityApp.Controllers
     {
         private UserManager<AppUser> _userManager;
         private RoleManager<AppRole> _roleManager;
-        public UsersController(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager)
+        public UsersController(UserManager<AppUser>  userManager, RoleManager<AppRole> roleManager)
         {
             _userManager = userManager;
-            _roleManager = roleManager;
+            _roleManager = roleManager; 
         }
         public IActionResult Index()
         {
             return View(_userManager.Users);
         }
 
-        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -33,11 +30,10 @@ namespace IdentityApp.Controllers
         {
             if(ModelState.IsValid)
             {
-                var user = new AppUser 
-                {
-                    UserName = model.Email, 
-                    Email = model.Email,
-                    FullName = model.FullName
+                var user = new AppUser { 
+                    UserName = model.UserName, 
+                    Email = model.Email, 
+                    FullName = model.FullName 
                 };
 
                 IdentityResult result = await _userManager.CreateAsync(user, model.Password);
@@ -46,9 +42,10 @@ namespace IdentityApp.Controllers
                 {
                     return RedirectToAction("Index");
                 }
+
                 foreach (IdentityError err in result.Errors)
                 {
-                    ModelState.AddModelError("", err.Description);
+                    ModelState.AddModelError("", err.Description);                    
                 }
             }
             return View(model);
@@ -60,24 +57,23 @@ namespace IdentityApp.Controllers
             {
                 return RedirectToAction("Index");
             }
-
             var user = await _userManager.FindByIdAsync(id);
+
             if(user != null)
             {
                 ViewBag.Roles = await _roleManager.Roles.Select(i => i.Name).ToListAsync();
-                
-                return View(new EditViewModel
-                {
+
+                return View(new EditViewModel {
                     Id = user.Id,
                     FullName = user.FullName,
                     Email = user.Email,
                     SelectedRoles = await _userManager.GetRolesAsync(user)
                 });
-            }
+            } 
             return RedirectToAction("Index");
         }
 
-        [HttpPost] 
+        [HttpPost]
         public async Task<IActionResult> Edit(string id, EditViewModel model)
         {
             if(id != model.Id)
@@ -94,7 +90,7 @@ namespace IdentityApp.Controllers
                     user.Email = model.Email;
                     user.FullName = model.FullName;
 
-                    var  result = await _userManager.UpdateAsync(user);
+                    var result = await _userManager.UpdateAsync(user);
 
                     if(result.Succeeded && !string.IsNullOrEmpty(model.Password))
                     {
@@ -120,7 +116,7 @@ namespace IdentityApp.Controllers
             }
             return View(model);
         }
-
+    
         [HttpPost]
         public async Task<IActionResult> Delete(string id)
         {
@@ -130,7 +126,6 @@ namespace IdentityApp.Controllers
             {
                 await _userManager.DeleteAsync(user);
             }
-
             return RedirectToAction("Index");
         }
     }
