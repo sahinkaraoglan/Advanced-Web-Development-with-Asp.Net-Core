@@ -1,6 +1,10 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using ProductsAPI.DTO;
 using ProductsAPI.Models;
 
@@ -12,10 +16,12 @@ namespace ProductsAPI.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
-        public UsersController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+        private readonly IConfiguration _configuration;
+        public UsersController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IConfiguration configuration)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _configuration = configuration;
         }
 
         [HttpPost("register")]
@@ -43,6 +49,7 @@ namespace ProductsAPI.Controllers
             return BadRequest(result.Errors);
         }
 
+        [HttpPost("login")]
         public async Task<IActionResult> Login(LoginDTO model)
         {
             var user = await _userManager.FindByEmailAsync(model.Email);
@@ -56,9 +63,34 @@ namespace ProductsAPI.Controllers
 
             if(result.Succeeded)
             {
-                return Ok(new {token = "token"});
+                return Ok(
+                    new {token = GenerateJWT(user)
+                });
             }
             return Unauthorized();
+        }
+
+        private object GenerateJWT(AppUser user)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration.GetSection("AppSettings:Secret").Value ?? "");
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity
+                (
+                    new Claim[]
+                    {
+                        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                        new Claim(ClaimTypes.Name, user.UserName ?? ""),
+                    }
+                ),
+                //claimin ne zaman biteceğini gösteren parametre.
+                Expires = DateTime.UtcNow.AddDays(1),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
     }
 }
