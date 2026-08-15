@@ -149,3 +149,5 @@ C:\Users\Hp\OneDrive\Desktop\ProductsAPI\bin\Debug\net8.0\Microsoft.IdentityMode
 C:\Users\Hp\OneDrive\Desktop\ProductsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Hp\OneDrive\Desktop\ProductsAPI\bin\Debug\net8.0\System.Formats.Asn1.dll
 C:\Users\Hp\OneDrive\Desktop\ProductsAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Hp\OneDrive\Desktop\ProductsAPI\obj\Debug\net8.0\ProductsAPI.RazorAssemblyInfo.cache
+C:\Users\Hp\OneDrive\Desktop\ProductsAPI\obj\Debug\net8.0\ProductsAPI.RazorAssemblyInfo.cs
