@@ -13,23 +13,22 @@ public class HomeController :Controller
     }
 
     //localhost:5000/?page=1
-    public IActionResult Index(int page = 1) {
-      
+    public IActionResult Index(int page = 1) 
+    {
         var products = _storeRepository
-        .Products
-        .Skip((page - 1) * pageSize)  //(2-1)*3 = 3 //(3-1)*3 = 6
-        .Select(p => 
-            new ProductViewModel {
-                Id = p.Id,
-                Name = p.Name,
-                Description = p.Description,
-                Price = p.Price
-            }).Take(pageSize);
+            .Products
+            .Skip((page - 1) * pageSize)   
+            .Select(p => 
+                new ProductViewModel {
+                    Id = p.Id,
+                    Name = p.Name,
+                    Description = p.Description,
+                    Price = p.Price
+                }).Take(pageSize);
 
         return View(new ProductListViewModel {
-            Products = products, 
-            PageInfo = new PageInfo
-            {
+            Products = products,
+            PageInfo = new PageInfo {
                 ItemsPerPage = pageSize,
                 TotalItems = _storeRepository.Products.Count()
             }
