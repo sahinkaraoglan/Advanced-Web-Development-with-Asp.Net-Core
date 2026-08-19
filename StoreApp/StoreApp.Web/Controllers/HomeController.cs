@@ -27,7 +27,12 @@ public class HomeController :Controller
             }).Take(pageSize);
 
         return View(new ProductListViewModel {
-            Products = products
+            Products = products, 
+            PageInfo = new PageInfo
+            {
+                ItemsPerPage = pageSize,
+                TotalItems = _storeRepository.Products.Count()
+            }
         });
 
     }
