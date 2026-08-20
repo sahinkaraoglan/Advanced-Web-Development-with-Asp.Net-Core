@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7XU7jtPX55u/kDiZQE5GKLtMBEEGPt+qEdwz1aaSnLXy+StAK0WvQ5xRRiAG4uWG0Bsq3+vjCwP5rbhEYRwX+g==",
+  "dgSpecHash": "8NhyPbDdDWWcuOoTSSFCo1rtGpPw6btvstO111Bhha9afuVcaA7C9/MVywE+qdVDzdAcAJw9EV28I2SanJefhg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hp\\OneDrive\\Desktop\\StoreApp\\StoreApp.Web\\StoreApp.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hp\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
@@ -51,5 +52,16 @@
     "C:\\Users\\Hp\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

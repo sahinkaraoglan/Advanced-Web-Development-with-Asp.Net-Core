@@ -126,3 +126,4 @@ C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web\obj\Debug\net8.0\StoreApp.Web
 C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web\obj\Debug\net8.0\StoreApp.Web.csproj.CopyComplete
 C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web\bin\Debug\net8.0\libman.json
 C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web\bin\Debug\net8.0\StoreApp.Web.staticwebassets.runtime.json
+C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web\bin\Debug\net8.0\AutoMapper.dll
