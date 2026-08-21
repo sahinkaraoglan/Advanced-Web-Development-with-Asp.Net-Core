@@ -13,6 +13,8 @@ public class MockEmployeeRepository : IEmployeeRepository
             new Employee { Id = 1, Name="Neslihan Karaoğlan", Email = "neslihankaraoglan@gmailc.com", Photo = "2.jpg", Deparment = "Muhasebe"},
             new Employee { Id = 1, Name="Sena Karaoğlan", Email = "senakaraoglan@gmailc.com", Photo = "3.jpg", Deparment = "Muhasebe"},
             new Employee { Id = 1, Name="Şahin Karaoğlan", Email = "sahinkaraoglan@gmailc.com", Photo = "4.jpg", Deparment = "Muhasebe"},
+            new Employee { Id = 1, Name="Şahin Karaoğlan", Email = "sahinkaraoglan@gmailc.com", Photo = "4.jpg", Deparment = "Muhasebe"},
+            new Employee { Id = 1, Name="Şahin Karaoğlan", Email = "sahinkaraoglan@gmailc.com", Photo = "4.jpg", Deparment = "Muhasebe"},
         };
     }
     public IEnumerable<Employee> GetAll()
