@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using razorpages.Models;
 using razorpages.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 builder.Services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+
+builder.Services.AddDbContext<DataContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
