@@ -1,13 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using razorpages.Models;
 using razorpages.Repository;
+using razorpagesExample.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-builder.Services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+builder.Services.AddTransient<IEmployeeRepository, SQLİTEEmployeeRepository>();
 
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
