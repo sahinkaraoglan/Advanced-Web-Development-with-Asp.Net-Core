@@ -18,10 +18,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Hp\OneDrive\Desktop\razorpages
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Hp/OneDrive/Desktop/razorpages/Pages/Employees.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Hp/OneDrive/Desktop/razorpages/Pages/Employees/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
