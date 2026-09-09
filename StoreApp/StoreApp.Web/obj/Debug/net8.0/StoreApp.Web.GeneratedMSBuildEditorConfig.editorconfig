@@ -18,6 +18,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Hp/OneDrive/Desktop/StoreApp/StoreApp.Web/Pages/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hp/OneDrive/Desktop/StoreApp/StoreApp.Web/Pages/Shared/_CardLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9DYXJkTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hp/OneDrive/Desktop/StoreApp/StoreApp.Web/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hp/OneDrive/Desktop/StoreApp/StoreApp.Web/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Hp/OneDrive/Desktop/StoreApp/StoreApp.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
