@@ -1,4 +1,4 @@
-using StoreApp.Data.Concrete;
+﻿using StoreApp.Data.Concrete;
 
 namespace StoreApp.Web.Models;
 
@@ -10,11 +10,10 @@ public class Cart
     {
         var item = Items.Where(p => p.Product.Id == product.Id).FirstOrDefault();
 
-        if(item == null)
+        if (item == null)
         {
-            Items.Add(new CartItem {Product = product, Quantity = quantity});
+            Items.Add(new CartItem { Product = product, Quantity = quantity });
         }
-
         else
         {
             item.Quantity += quantity;
@@ -26,20 +25,21 @@ public class Cart
         Items.RemoveAll(i => i.Product.Id == product.Id);
     }
 
-    public decimal CalculateTotal()
+    public double CalculateTotal()
     {
         return Items.Sum(i => i.Product.Price * i.Quantity);
     }
 
     public virtual void Clear()
     {
-        Items.Clear();
+        Items.Clear();    
     }
 }
 
 public class CartItem
 {
     public int CartItemId { get; set; }
+    public int ProductId { get; set; }
     public Product Product { get; set; } = new();
     public int Quantity { get; set; }
 }

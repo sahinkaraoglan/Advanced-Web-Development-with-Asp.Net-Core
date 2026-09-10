@@ -127,3 +127,5 @@ C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web\obj\Debug\net8.0\StoreApp.Web
 C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web\bin\Debug\net8.0\libman.json
 C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web\bin\Debug\net8.0\StoreApp.Web.staticwebassets.runtime.json
 C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web\bin\Debug\net8.0\Iyzipay.dll
+C:\Users\Hp\OneDrive\Desktop\StoreApp\StoreApp.Web\bin\Debug\net8.0\Newtonsoft.Json.dll
